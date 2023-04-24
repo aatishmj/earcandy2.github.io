@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <a href="#" class="logo">Ear Candy</a>
+        
+        <div class="nav-links">
+            <ul>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">SignIn</a></li>
+                <li><a href="#">More</a></li>
+            </ul>
+        </div>
+        <img src="../ear candy /covers/menu-btn.png" alt="menu" class="menu">
+    </nav>
+    <header></header>
+    <section>
+        <div class="content">
+            <h1>WELCOME TO EARCANDY !</h1>
+            <p>Listen anytime anywhere !<br>to your faviourte podcasts !</p>
+            <a href="#steam">LISTEN NOW</a>
+        </div>
+    </section>
+        <section>    
+            <div class="card-container">
+                <div class="card">
+                    <div class="image">
+                        <a href="../ear candy /hackathon/project.html">
+                            <img src="../ear candy /covers/1.jpg" alt="NFT Image">
+                            </a>
+                    </div>
+                    <div class="info">
+                        <main id="steam">
+                        <h2>LISTEN TO : </h2>
+                        <p>M.S DHONI</p>
+                        <p>THE UNTOLD STORY</p>
+                        <a href="../ear candy /hackathon/project.html"><button>Play Now </button></a>
+                    </main>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                <div class="image">
+                    <a href="../ear candy /hackathon/project.html">
+                        <img src="../ear candy /covers/5.jpg" alt="NFT Image">
+                        </a>
+                </div>
+                <div class="info">
+                    <h2>LISTEN TO : </h2>
+                    <p>M.S DHONI</p>
+                    <p>THE UNTOLD STORY</p>
+                    <a href="../ear candy /hackathon/project.html"><button>Play Now </button></a>
+                </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                <div class="image">
+                    <a href="../ear candy /hackathon/project.html">
+                        <img src="../ear candy /covers/4.jpg" alt="NFT Image">
+                        </a>
+                </div>
+                <div class="info">
+                    <h2>LISTEN TO : </h2>
+                    <p>M.S DHONI</p>
+                    <p>THE UNTOLD STORY</p>
+                    <a href="../ear candy /hackathon/project.html"><button>Play Now </button></a>
+                </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                <div class="image">
+                    <a href="../ear candy /hackathon/project.html">
+                        <img src="../ear candy /covers/3.jpg" alt="NFT Image">
+                        </a>
+                </div>
+                <div class="info">
+                    <h2>LISTEN TO : </h2>
+                    <p>M.S DHONI</p>
+                    <p>THE UNTOLD STORY</p>
+                    <a href="../ear candy /hackathon/project.html"><button>Play Now </button></a>
+                </div>
+   
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                <div class="image">
+                    <a href="../ear candy /hackathon/project.html">
+                    <img src="../ear candy /covers/2.jpg" alt="NFT Image">
+                    </a>
+                </div>
+                <div class="info">
+                    <h2>LISTEN TO : </h2>
+                    <p>M.S DHONI</p>
+                    <p>THE UNTOLD STORY</p>
+                    <a href="../ear candy /hackathon/project.html"><button>Play Now </button></a>
+                </div>
+                </div>
+            </div>
+        </section>
+<!-- </main> -->
+
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script type="text/javascript">
+        $(document).on('scroll', function(){$('h1').css("left", Math.max(500 - 0.35*window.scrollY,0)+"px");})
+    </script>
+    <script type="text/javascript">
+        window.addEventListener('scroll',reveal);
+        function reveal(){
+            var reveals = document.querySelectorAll('.reveal');
+            for (var i=0 ; i<reveals.length;i++){
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint =150;
+
+                if(revealtop<windowheight-revealpoint){
+                    reveals[i].classList.add('active');
+                }
+                else{
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+    </script>
+</body>
+</html>
